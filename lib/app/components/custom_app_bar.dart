@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import '../style/colors.dart';
 import '../style/paddings.dart';
 
-class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
+class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   final Size preferredSize;
   final List<Widget>? action;
   final PreferredSize? tabBar;
   final Color? colors;
 
-  CustomAppBar({
+  const CustomAppBar({
     Key? key,
     this.action,
     this.tabBar,
